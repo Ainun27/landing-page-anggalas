@@ -76,6 +76,7 @@ body {
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
+  padding-top: 76px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -223,7 +224,7 @@ img {
    NAVBAR
    ========================================================================== */
 .navbar {
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -2683,6 +2684,15 @@ img {
 @media (max-width: 768px) {
   html, body {
     overflow-x: hidden;
+  }
+
+  body {
+    padding-top: 68px;
+  }
+
+  .menu-overlay {
+    top: 68px;
+    height: calc(100vh - 68px);
   }
 
   .container {
