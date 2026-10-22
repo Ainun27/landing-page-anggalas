@@ -1,0 +1,1218 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  
+  <title>Angga Las — Spesialis Body Repair, Las Ketok & Cat Duco Cibitung</title>
+  <meta name="description" content="Bengkel las ketok, perbaikan bodi presisi, dan cat duco mobil & truk di Wanasari, Cibitung, Bekasi. Dikerjakan langsung oleh Pak Wahyu Permana sejak tahun 2000.">
+  <meta name="keywords" content="bengkel las cibitung, body repair bekasi, las ketok bekasi, cat duco cibitung, poles mobil wet look, angga las wanasari">
+  <meta name="author" content="Angga Las - Body Repair">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Angga Las — Spesialis Body Repair & Cat Duco Sejak 2000">
+  <meta property="og:description" content="Bodi mobil kembali mulus, presisi, dan mengilap seperti baru. Dikerjakan langsung tangan pertama oleh montir senior 25+ tahun di Cibitung, Bekasi.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="id_ID">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%23DC2626'/><path d='M28 70 L46 22 L54 22 L72 70 L59 70 L55 57 L45 57 L41 70 Z M48 46 L52 46 L50 34 Z' fill='%23FFB800'/></svg>">
+
+  <!-- Google Fonts: Outfit & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <!-- Mobile Backdrop Overlay -->
+  <div class="menu-overlay" id="menuOverlay" onclick="closeMenu()"></div>
+
+  <!-- ============================================================
+       STICKY NAVBAR (INTEGRATED CLEAN LIVE STATUS - NO BLACK BAR)
+       ============================================================ -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      
+      <!-- Brand Logo -->
+      <a href="#beranda" class="brand-link" aria-label="Angga Las Body Repair">
+        <div class="brand-badge-icon">
+          <span>AL</span>
+        </div>
+        <div class="brand-text-group">
+          <span class="brand-title">ANGGA LAS</span>
+          <span class="brand-sub">BODY REPAIR & CAT DUCO</span>
+        </div>
+      </a>
+
+      <!-- Desktop & Mobile Nav Links -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#beranda" class="nav-link active" onclick="closeMenu()">Beranda</a></li>
+        <li><a href="#tentang" class="nav-link" onclick="closeMenu()">Tentang</a></li>
+        <li><a href="#layanan" class="nav-link" onclick="closeMenu()">Layanan</a></li>
+        <li><a href="#komparasi" class="nav-link" onclick="closeMenu()">Before & After</a></li>
+        <li><a href="#galeri" class="nav-link" onclick="closeMenu()">Galeri</a></li>
+        <li><a href="#form-wa" class="nav-link" onclick="openChatTemplateModal(); closeMenu(); return false;">Tanya via WA</a></li>
+        <li><a href="#lokasi" class="nav-link" onclick="closeMenu()">Lokasi</a></li>
+      </ul>
+
+      <!-- Mobile Hamburger Toggle -->
+      <div class="nav-actions">
+        <button class="mobile-toggle" id="menuToggle" aria-label="Buka Menu" onclick="toggleMenu()">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       1. HERO SECTION (TOMBOL WA UTAMA #1)
+       ============================================================ -->
+  <header class="hero" id="beranda">
+    <div class="container hero-grid">
+      
+      <!-- Left Content -->
+      <div class="hero-content reveal-on-scroll">
+        
+        <!-- Live Real-Time WIB Status Pill (On its own line above kicker) -->
+        <div class="hero-status-wrapper">
+          <div class="hero-status-pill open" id="liveStatusPill">
+            <span class="status-indicator-dot open" id="liveStatusDot"></span>
+            <span id="liveStatusText">Buka Hari Ini • 08.00 - 17.00 WIB</span>
+          </div>
+        </div>
+
+        <span class="section-kicker">Bengkel Las Ketok & Cat Duco Asli Cibitung</span>
+
+        <h1 class="hero-title">
+          Kembalikan Bodi Mobil <span class="text-highlight-red">Presisi & Mengilap</span> Seperti&nbsp;Baru.
+        </h1>
+
+        <p class="hero-desc">
+          Ditangani langsung oleh <strong>Bapak Wahyu Permana</strong> dengan dedikasi lebih dari <strong>25 tahun sejak tahun 2000</strong>. Solusi bodi penyok, bekas tabrakan, keropos karat, hingga casis patah. Langsung tangan pertama, jujur, dan bergaransi rapi.
+        </p>
+
+        <!-- Primary Action Buttons (Hanya 2 Tombol WA di Seluruh Web) -->
+        <div class="hero-actions">
+          <!-- Tombol WA Resmi #1 -->
+          <a href="https://wa.me/6289531168549?text=Halo%20Pak%20Wahyu%2C%20saya%20mau%20konsultasi%20perbaikan%20bodi%20mobil%20di%20Angga%20Las" target="_blank" rel="noopener" class="btn btn-primary-wa">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.149.929 3.178 0 5.767-2.587 5.768-5.766 0-3.18-2.588-5.771-5.768-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.062-2.18-.553-1.898-.785-3.119-2.73-3.214-2.856-.095-.127-.775-1.031-.775-1.967 0-.936.491-1.396.666-1.587.175-.191.381-.239.508-.239.127 0 .254.002.365.008.117.006.273-.045.426.323.16.383.542 1.323.589 1.419.048.096.079.208.016.335-.064.127-.096.207-.191.319-.096.111-.2.247-.286.333-.095.095-.194.198-.083.389.111.191.493.813 1.056 1.314.726.645 1.338.845 1.529.94.19.095.301.079.412-.048.111-.127.476-.556.603-.746.127-.19.254-.159.428-.095.175.063 1.11.523 1.301.619.191.095.318.143.365.222.048.079.048.46-.096.865z"/>
+              <path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2.05 22l4.985-1.307C8.482 21.554 10.187 22 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18c-1.63 0-3.14-.493-4.402-1.338l-.316-.21-2.96.776.79-2.885-.23-.332C3.993 14.73 3.5 13.415 3.5 12c0-4.687 3.813-8.5 8.5-8.5s8.5 3.813 8.5 8.5-3.813 8.5-8.5 8.5z"/>
+            </svg>
+            <span>Konsultasi Kerusakan via WhatsApp</span>
+          </a>
+
+          <a href="#komparasi" class="btn btn-secondary-outline">
+            <span>Lihat Hasil Before & After</span>
+            <span class="btn-arrow">↓</span>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Right Showcase Card -->
+      <div class="hero-visual-wrap reveal-on-scroll">
+        <div class="hero-stage-glow"></div>
+
+        <div class="hero-card-frame">
+          <div class="frame-tag-top">
+            <span class="tag-dot"></span> BUKTI PENGERJAAN NYATA DI BENGKEL
+          </div>
+
+          <div class="hero-img-container cursor-zoom" onclick="openLightbox('gambar/AISelect_20261016_185801_Google.jpg', 'Pak Wahyu Permana sedang mengelas rangka bodi mobil dengan teknik las karbit presisi.')">
+            <img src="gambar/AISelect_20261016_185801_Google.jpg" alt="Pak Wahyu Permana mengelas bodi mobil dengan las karbit presisi di Angga Las Cibitung" class="hero-main-img" fetchpriority="high">
+            <div class="zoom-hint">Klik untuk perbesar</div>
+          </div>
+
+          <div class="hero-card-footer">
+            <div class="card-caption-title">Keahlian Las Karbit Senior</div>
+            <div class="card-caption-desc">Pak Wahyu Permana menangani sendiri perbaikan bodi mobil tanpa dempul asal tutup.</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ============================================================
+       STATS STRIP (100+ REALISTIK)
+       ============================================================ -->
+  <section class="stats-strip">
+    <div class="container stats-grid">
+      <div class="stat-card">
+        <span class="stat-number" data-target="25">0</span><span class="stat-plus">+</span>
+        <span class="stat-label">Tahun Dedikasi (Sejak 2000)</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number" data-target="100">0</span><span class="stat-plus">%</span>
+        <span class="stat-label">Dikerjakan Tangan Pertama</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number" data-target="100">0</span><span class="stat-plus">+</span>
+        <span class="stat-label">Mobil & Truk Selesai Diperbaiki</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number" data-target="0">0</span><span class="stat-plus"> Biaya</span>
+        <span class="stat-label">Konsultasi Foto via WhatsApp</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       INTERACTIVE BEFORE-AFTER SECTION (DEFAULT: BERDAMPINGAN)
+       ============================================================ -->
+  <section class="comparison-section" id="komparasi">
+    <div class="container">
+      
+      <div class="section-header reveal-on-scroll">
+        <span class="section-kicker">Transformasi Nyata</span>
+        <h2 class="section-title">Bukti Nyata Sebelum & Sesudah</h2>
+        <p class="section-subtitle">
+          Pilih kasus perbaikan di bawah ini. Anda bisa melihat foto <strong>berdampingan</strong> atau menguji slider pembanding <strong>Before | After</strong>.
+        </p>
+      </div>
+
+      <!-- Case Switcher Tabs (Clean No Emoji) -->
+      <div class="case-tabs-row reveal-on-scroll">
+        <button type="button" class="case-tab-btn active" id="tab-avanza" onclick="switchComparisonCase('avanza', this)">
+          <span>Tabrakan Depan (Avanza)</span>
+        </button>
+        <button type="button" class="case-tab-btn" id="tab-truk" onclick="switchComparisonCase('truk', this)">
+          <span>Keropos Total (Kabin Truk)</span>
+        </button>
+        <button type="button" class="case-tab-btn" id="tab-sedan" onclick="switchComparisonCase('sedan', this)">
+          <span>Cat Duco Full (Sedan Altis)</span>
+        </button>
+      </div>
+
+      <!-- View Mode Controls (Default: Mode Berdampingan) -->
+      <div class="ba-controls-toolbar reveal-on-scroll">
+        <div class="ba-ctrl-group">
+          <button type="button" class="ctrl-toggle-btn active" id="btnModeSideBySide" onclick="setComparisonViewMode('sidebyside')">
+            <span>Mode Berdampingan</span>
+          </button>
+          <button type="button" class="ctrl-toggle-btn" id="btnModeSlider" onclick="setComparisonViewMode('slider')">
+            <span>Before | After</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- View 1: Side-by-Side View (Default Active) -->
+      <div class="ba-sidebyside-wrapper reveal-on-scroll" id="baSideBySideView">
+        <div class="sidebyside-grid">
+          
+          <!-- Before Card -->
+          <div class="side-card cursor-zoom" onclick="openCurrentCaseLightbox('before')">
+            <div class="side-card-badge before">SEBELUM PENGERJAAN</div>
+            <div class="side-card-img-wrap">
+              <img src="gambar/IMG-20261021-WA0097.jpg" alt="Foto sebelum perbaikan" id="sbsImgBefore" class="side-card-img">
+              <div class="side-card-zoom-hint">Klik untuk perbesar</div>
+            </div>
+            <div class="side-card-desc" id="sbsDescBefore">
+              Kondisi bodi rusak, penyok parah / keropos sebelum diperbaiki di bengkel.
+            </div>
+          </div>
+
+          <!-- After Card -->
+          <div class="side-card cursor-zoom" onclick="openCurrentCaseLightbox('after')">
+            <div class="side-card-badge after">SESUDAH SELESAI (HASIL AKHIR)</div>
+            <div class="side-card-img-wrap">
+              <img src="gambar/IMG-20261021-WA0096.jpg" alt="Foto sesudah perbaikan" id="sbsImgAfter" class="side-card-img">
+              <div class="side-card-zoom-hint">Klik untuk perbesar</div>
+            </div>
+            <div class="side-card-desc" id="sbsDescAfter">
+              Bodi kembali lurus presisi, cat duco rata mengilap, dan siap pakai.
+            </div>
+          </div>
+
+        </div>
+
+        <div class="ba-case-info-box">
+          <h4 id="baSbsCaseTitle">Perbaikan Bodi Ringsek Bekas Tabrakan Depan (Toyota Avanza)</h4>
+          <p id="baSbsCaseDesc">Kap mesin tertekuk parah, bumper amblas, dan fender hancur diketok presisi kembali ke lekukan aslinya, lalu dicat duco pernis glossy yang menyatu rata.</p>
+        </div>
+      </div>
+
+      <!-- View 2: Before | After Slider View -->
+      <div class="comparison-card-wrapper reveal-on-scroll" id="baSliderWrapperView" style="display: none;">
+        
+        <div class="ba-slider-container case-avanza" id="baSliderContainer">
+          
+          <!-- Before Layer (Clipped with handle - text never sticks!) -->
+          <div class="ba-layer ba-before-layer" id="baBeforeLayer">
+            <img src="gambar/IMG-20261021-WA0097.jpg" alt="Sebelum diperbaiki: Mobil Avanza ringsek parah bagian depan" class="ba-img" id="baImgBefore">
+            <div class="ba-label ba-label-before" id="baLabelBefore">SEBELUM: TABRAKAN PARAH</div>
+          </div>
+
+          <!-- After Layer (Clipped with handle) -->
+          <div class="ba-layer ba-after-layer" id="baAfterLayer">
+            <img src="gambar/IMG-20261021-WA0096.jpg" alt="Sesudah diperbaiki: Mobil Avanza selesai mulus presisi" class="ba-img" id="baImgAfter">
+            <div class="ba-label ba-label-after" id="baLabelAfter">SESUDAH: PRESISI & MULUS TOTAL</div>
+          </div>
+
+          <!-- Drag Handle -->
+          <div class="ba-handle" id="baHandle">
+            <div class="ba-handle-line"></div>
+            <div class="ba-handle-knob">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </div>
+            <div class="ba-handle-line"></div>
+          </div>
+
+        </div>
+
+        <div class="ba-case-info-box">
+          <h4 id="baCaseTitle">Perbaikan Bodi Ringsek Bekas Tabrakan Depan (Toyota Avanza)</h4>
+          <p id="baCaseDesc">Kap mesin tertekuk parah, bumper amblas, dan fender hancur diketok presisi kembali ke lekukan aslinya, lalu dicat duco pernis glossy yang menyatu rata.</p>
+        </div>
+
+        <div class="ba-instruction-bar">
+          <span>Geser garis tengah ke kiri atau kanan untuk membandingkan</span>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       2. TENTANG BENGKEL & PAK WAHYU
+       ============================================================ -->
+  <section class="about-section" id="tentang">
+    <div class="container">
+      
+      <div class="section-header reveal-on-scroll">
+        <span class="section-kicker">Profil Bengkel</span>
+        <h2 class="section-title">25 Tahun Menjaga Kualitas & Kepercayaan</h2>
+        <p class="section-subtitle">
+          Bukan bengkel calo. Di Angga Las, kendaraanmu ditangani langsung oleh montir senior dengan standar ketelitian tinggi.
+        </p>
+      </div>
+
+      <div class="about-card-main reveal-on-scroll">
+        <div class="about-grid">
+          
+          <!-- Story Text -->
+          <div class="about-text-col">
+            <span class="about-kicker">Kisah & Komitmen Kami</span>
+            <h3>"Bodi Mobil Bukan Cuma Ditempel Dempul Tebal, Tapi Harus Kembali Presisi."</h3>
+            
+            <p>
+              Banyak pemilik kendaraan kecewa setelah perbaikan di tempat lain: bodi terlihat rata dari luar, namun di baliknya hanya dilapisi dempul tebal yang mudah retak dan karat yang tidak dibersihkan tuntas.
+            </p>
+            <p>
+              Didirikan sejak <strong>tahun 2000</strong> di Wanasari, Cibitung oleh <strong>Bapak Wahyu Permana</strong>, Bengkel <strong>Angga Las</strong> memegang prinsip kejujuran pengerjaan. Pelat yang keropos kami potong dan ganti pelat baru, ketokan pelat ditarik sampai presisi mendekati bentuk asli, dan las karbit diterapkan secara matang agar sambungan kokoh.
+            </p>
+
+            <div class="about-quote-box">
+              <div class="quote-symbol">“</div>
+              <p>
+                Saya selalu pegang langsung setiap mobil dan truk yang masuk ke bengkel. Pelanggan bisa diskusi terbuka soal bahan cat yang diinginkan dan disesuaikan dengan anggaran.
+              </p>
+              <div class="quote-author">— Pak Wahyu Permana, <span>Pemilik & Montir Kepala Angga Las</span></div>
+            </div>
+
+            <div class="about-perks-list">
+              <div class="perk-item">
+                <span class="perk-check">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </span>
+                <span><strong>Bahan Berkualitas:</strong> Menggunakan cat duco pilihan, thinner berkualitas, dan dempul lentur tahan panas.</span>
+              </div>
+              <div class="perk-item">
+                <span class="perk-check">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </span>
+                <span><strong>Solusi Fleksibel Sesuai Budget:</strong> Mau cat per panel (spet hemat) atau siram full bodi premium, semua bisa dibicarakan.</span>
+              </div>
+              <div class="perk-item">
+                <span class="perk-check">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </span>
+                <span><strong>Spesialis Mobil Pribadi & Niaga:</strong> Terbiasa menangani sedan, MPV keluarga, pick-up muatan, hingga kabin truk besar.</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Side Visual Column -->
+          <div class="about-visual-col">
+            <div class="about-img-box cursor-zoom" onclick="openLightbox('gambar/AISelect_20261016_185701_Google.jpg', 'Plang resmi Angga Las Body Repair di pinggir jalan raya Wanasari Cibitung, Bekasi.')">
+              <img src="gambar/AISelect_20261016_185701_Google.jpg" alt="Papan Plang Resmi Angga Las Body Repair di Wanasari Cibitung" class="about-img" loading="lazy">
+              <div class="about-img-overlay">
+                <span class="overlay-badge">Lokasi Resmi</span>
+                <h4>Plang Angga Las - Body Repair</h4>
+                <p>Terletak strategis di pinggir jalan Wanasari, Cibitung, Bekasi.</p>
+              </div>
+            </div>
+
+            <!-- Operating Card -->
+            <div class="open-hours-card">
+              <div class="card-hours-head">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                <strong>Jam Operasional Bengkel</strong>
+              </div>
+              <div class="hours-row">
+                <span>Senin - Minggu:</span>
+                <strong>08.00 - 17.00 WIB</strong>
+              </div>
+              <div class="hours-note">
+                <em>Buka setiap hari, siap melayani konsultasi langsung di bengkel maupun via WhatsApp.</em>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       3. DAFTAR LAYANAN BENGKEL (CLEAN SVG ICONS)
+       ============================================================ -->
+  <section class="services-section" id="layanan">
+    <div class="container">
+      
+      <div class="section-header reveal-on-scroll">
+        <span class="section-kicker">Layanan Bengkel</span>
+        <h2 class="section-title">Solusi Menyeluruh untuk Bodi Kendaraan Anda</h2>
+        <p class="section-subtitle">
+          Dari perbaikan baret ringan hingga rekonstruksi tabrakan parah dan peremajaan armada niaga.
+        </p>
+      </div>
+
+      <div class="services-grid">
+
+        <!-- Service 1 -->
+        <div class="service-card reveal-on-scroll">
+          <div class="service-icon-wrap">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+          </div>
+          <span class="service-tag">Layanan Utama</span>
+          <h3>Las Ketok & Body Repair</h3>
+          <p>
+            Memperbaiki bodi mobil penyok, bumper robek, ringsek akibat tabrakan, serta merekonstruksi pelat bodi keropos dengan teknik ketok presisi.
+          </p>
+          <ul class="service-points">
+            <li>Tarik ketok plat mendekati lekuk asli pabrik</li>
+            <li>Ganti plat baru untuk area bodi keropos</li>
+            <li>Minimalkan pemakaian dempul berlebih</li>
+          </ul>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-card featured reveal-on-scroll">
+          <div class="featured-ribbon">Rekomendasi</div>
+          <div class="service-icon-wrap">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"/><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"/><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"/><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.9 0 1.7-.8 1.7-1.8 0-.5-.2-.9-.5-1.3-.3-.4-.5-.8-.5-1.3 0-1 .8-1.8 1.8-1.8H16c3.3 0 6-2.7 6-6 0-5.5-4.5-9.8-10-9.8z"/></svg>
+          </div>
+          <span class="service-tag">Hasil Mengilap</span>
+          <h3>Cat Duco & Full Repaint</h3>
+          <p>
+            Pengecatan duco per panel (spet baret fender/pintu/bumper) maupun cat siram full body mobil dan kabin truk dengan oplosan warna akurat.
+          </p>
+          <ul class="service-points">
+            <li>Pilihan cat duco standar hingga premium</li>
+            <li>Pernis clear coat glossy tahan cuaca</li>
+            <li>Pengecatan kabin truk, bak pick-up & mobil pribadi</li>
+          </ul>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-card reveal-on-scroll">
+          <div class="service-icon-wrap">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.4 7.2L22 12l-7.6 2.8L12 22l-2.4-7.2L2 12l7.6-2.8L12 2z"/></svg>
+          </div>
+          <span class="service-tag">Detailing Finishing</span>
+          <h3>Poles Body Wet-Look</h3>
+          <p>
+            Mengangkat jamur cat, menghilangkan baret halus (swirl mark), dan mengembalikan kedalaman warna mobil yang kusam agar kembali mengilap.
+          </p>
+          <ul class="service-points">
+            <li>Compound halus bertingkat tanpa mengikis pernis</li>
+            <li>Finishing cermin (mirror gloss effect)</li>
+            <li>Melindungi permukaan cat dari kusam matahari</li>
+          </ul>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="service-card reveal-on-scroll">
+          <div class="service-icon-wrap">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+          </div>
+          <span class="service-tag">Struktur Rangka</span>
+          <h3>Las Casis Mobil, Truk & Motor</h3>
+          <p>
+            Pengelasan khusus rangka casis retak, patah, atau bengkok akibat muatan berat maupun kecelakaan dengan sambungan las karbit kokoh.
+          </p>
+          <ul class="service-points">
+            <li>Penguatan rangka casis pick-up dan truk angkutan</li>
+            <li>Penyambungan sasis mobil pribadi & motor</li>
+            <li>Uji kekuatan sambungan sebelum serah terima</li>
+          </ul>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="service-card reveal-on-scroll">
+          <div class="service-icon-wrap">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 22V4a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v18M17 10h2a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2h-2"/><rect x="6" y="6" width="8" height="6" rx="1"/></svg>
+          </div>
+          <span class="service-tag">Penanganan Khusus</span>
+          <h3>Las Tangki Bocor & Rembes</h3>
+          <p>
+            Perbaikan tangki bahan bakar (bensin/solar) mobil dan truk yang bocor, kropos, atau retak dengan prosedur keamanan pengosongan dan pengelasan presisi.
+          </p>
+          <ul class="service-points">
+            <li>Pengelasan rapat tahan rembesan BBM</li>
+            <li>Uji tekanan air untuk memastikan bebas bocor</li>
+            <li>Pembersihan kerak karat dalam tangki</li>
+          </ul>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="service-card reveal-on-scroll">
+          <div class="service-icon-wrap">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+          </div>
+          <span class="service-tag">Armada Usaha</span>
+          <h3>Restorasi Kendaraan Niaga</h3>
+          <p>
+            Peremajaan bodi armada usaha (Colt Diesel, Canter, Elf, GranMax, Carry pick-up). Perbaikan lantai bak keropos, engsel pintu kendur, dan repaint kabin.
+          </p>
+          <ul class="service-points">
+            <li>Pengerjaan teliti agar armada siap kerja kembali</li>
+            <li>Plat tebal untuk bak muatan tahan banting</li>
+            <li>Harga bersahabat untuk pemilik armada usaha</li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       4. GALERI INTERAKTIF AUTO-SLIDER (KOMPAK & BERSIH)
+       ============================================================ -->
+  <section class="gallery-section" id="galeri">
+    <div class="container">
+
+      <div class="section-header reveal-on-scroll">
+        <span class="section-kicker">Dokumentasi Kerja</span>
+        <h2 class="section-title">Dokumentasi Nyata Pengerjaan Angga Las</h2>
+        <p class="section-subtitle">
+          Geser atau biarkan otomatis berganti untuk melihat pengerjaan riil Bapak Wahyu di bengkel.
+        </p>
+      </div>
+
+      <!-- Auto-Advancing Compact Gallery Carousel -->
+      <div class="gallery-carousel-wrapper reveal-on-scroll" id="carouselWrapper">
+        
+        <div class="gallery-carousel" id="galleryCarousel">
+          <div class="gallery-track" id="galleryTrack">
+
+            <!-- Slide 1 -->
+            <div class="gallery-slide active" onclick="openLightbox('gambar/IMG-20261021-WA0096.jpg', 'Hasil akhir Toyota Avanza silver B 1407 FFH selesai rekonstruksi tabrakan depan.')">
+              <div class="gallery-slide-img-box">
+                <img src="gambar/IMG-20261021-WA0096.jpg" alt="Toyota Avanza silver selesai tabrakan di Angga Las" class="gallery-slide-img" loading="lazy">
+                <span class="slide-zoom-badge">Lihat Penuh</span>
+              </div>
+              <div class="gallery-slide-info">
+                <span class="slide-kicker">Rekonstruksi Tabrakan</span>
+                <h4>Toyota Avanza Selesai Tabrakan Depan</h4>
+                <p>Kap mesin, lampu, dan bumper depan yang sebelumnya hancur terlipat kembali presisi seperti standar orisinil pabrik.</p>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="gallery-slide" onclick="openLightbox('gambar/IMG-20261021-WA0100.jpg', 'Kabin truk Colt Diesel kuning selesai restorasi karat dan repaint duco mengilap.')">
+              <div class="gallery-slide-img-box">
+                <img src="gambar/IMG-20261021-WA0100.jpg" alt="Restorasi kabin truk Colt Diesel kuning mulus rapi di Angga Las" class="gallery-slide-img" loading="lazy">
+                <span class="slide-zoom-badge">Lihat Penuh</span>
+              </div>
+              <div class="gallery-slide-info">
+                <span class="slide-kicker">Restorasi Truk</span>
+                <h4>Restorasi Kabin Truk Colt Diesel</h4>
+                <p>Pelat keropos dibuang dan diganti pelat baru las karbit, disiram cat duco kuning cerah tahan karat dan cuaca ekstrem.</p>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="gallery-slide" onclick="openLightbox('gambar/IMG-20261021-WA0093.jpg', 'Toyota Corolla Altis hitam B 1672 NQ selesai cat duco dan poles wet look cermin mengilap.')">
+              <div class="gallery-slide-img-box">
+                <img src="gambar/IMG-20261021-WA0093.jpg" alt="Sedan Corolla Altis hitam mengkilap wet look hasil cat duco Angga Las" class="gallery-slide-img" loading="lazy">
+                <span class="slide-zoom-badge">Lihat Penuh</span>
+              </div>
+              <div class="gallery-slide-info">
+                <span class="slide-kicker">Cat Duco & Poles</span>
+                <h4>Sedan Altis Hitam Wet-Look Finish</h4>
+                <p>Hasil semprotan cat duco hitam pekat dengan lapisan pernis clear coat yang memantulkan bayangan seperti cermin.</p>
+              </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="gallery-slide" onclick="openLightbox('gambar/IMG-20261021-WA0094.jpg', 'Proses masking koran rapi dan pengecatan primer pada mobil pick-up putih di bengkel Angga Las.')">
+              <div class="gallery-slide-img-box">
+                <img src="gambar/IMG-20261021-WA0094.jpg" alt="Tahap pengecatan dan masking mobil pick-up putih di Angga Las Cibitung" class="gallery-slide-img" loading="lazy">
+                <span class="slide-zoom-badge">Lihat Penuh</span>
+              </div>
+              <div class="gallery-slide-info">
+                <span class="slide-kicker">Proses Pengecatan</span>
+                <h4>Tahap Masking & Cat Dasar Pick-Up</h4>
+                <p>Proses penutupan kaca dan bagian dalam rapi agar semprotan cat duco tidak mengenai komponen interior kendaraan.</p>
+              </div>
+            </div>
+
+            <!-- Slide 5 -->
+            <div class="gallery-slide" onclick="openLightbox('gambar/AISelect_20261016_185801_Google.jpg', 'Pak Wahyu Permana sedang mengelas pelat lantai kabin mobil dengan las karbit oksiasetilena senior.')">
+              <div class="gallery-slide-img-box">
+                <img src="gambar/AISelect_20261016_185801_Google.jpg" alt="Pak Wahyu Permana sedang mengelas lantai bodi mobil dengan las karbit" class="gallery-slide-img" loading="lazy">
+                <span class="slide-zoom-badge">Lihat Penuh</span>
+              </div>
+              <div class="gallery-slide-info">
+                <span class="slide-kicker">Keahlian Montir</span>
+                <h4>Pengerjaan Las Karbit Pak Wahyu</h4>
+                <p>Dikerjakan langsung tangan pertama oleh Pak Wahyu Permana dengan pengalaman 25+ tahun memastikan sambungan kokoh.</p>
+              </div>
+            </div>
+
+            <!-- Slide 6 -->
+            <div class="gallery-slide" onclick="openLightbox('gambar/IMG-20261021-WA0099.jpg', 'Mobil pick-up biru Carry dan armada niaga dalam proses perbaikan bodi di bengkel Angga Las.')">
+              <div class="gallery-slide-img-box">
+                <img src="gambar/IMG-20261021-WA0099.jpg" alt="Armada pick-up niaga dalam penanganan body repair di Angga Las Cibitung" class="gallery-slide-img" loading="lazy">
+                <span class="slide-zoom-badge">Lihat Penuh</span>
+              </div>
+              <div class="gallery-slide-info">
+                <span class="slide-kicker">Armada Niaga</span>
+                <h4>Perbaikan Bodi Pick-Up Armada Usaha</h4>
+                <p>Penanganan bodi depan, pintu, dan dudukan engsel mobil angkutan agar kembali kokoh beroperasi.</p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Carousel Arrow Controls -->
+          <button type="button" class="carousel-arrow prev" onclick="moveGallerySlide(-1)" aria-label="Foto Sebelumnya">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+          </button>
+          <button type="button" class="carousel-arrow next" onclick="moveGallerySlide(1)" aria-label="Foto Selanjutnya">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </button>
+        </div>
+
+        <!-- Carousel Dots Indicator -->
+        <div class="carousel-dots" id="carouselDots">
+          <button type="button" class="carousel-dot active" onclick="setGallerySlide(0)" aria-label="Slide 1"></button>
+          <button type="button" class="carousel-dot" onclick="setGallerySlide(1)" aria-label="Slide 2"></button>
+          <button type="button" class="carousel-dot" onclick="setGallerySlide(2)" aria-label="Slide 3"></button>
+          <button type="button" class="carousel-dot" onclick="setGallerySlide(3)" aria-label="Slide 4"></button>
+          <button type="button" class="carousel-dot" onclick="setGallerySlide(4)" aria-label="Slide 5"></button>
+          <button type="button" class="carousel-dot" onclick="setGallerySlide(5)" aria-label="Slide 6"></button>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       5. KONSULTASI WHATSAPP CEPAT (MODAL TRIGGER)
+       ============================================================ -->
+  <section class="consultation-section" id="form-wa">
+    <div class="container">
+
+      <div class="consultation-card reveal-on-scroll">
+        <span class="section-kicker">Konsultasi Praktis 30 Detik</span>
+        <h2 class="consultation-title">Mau Tanya Estimasi Biaya & Kerusakan ke Pak Wahyu?</h2>
+        <p class="consultation-desc">
+          Gunakan fitur perangkai pesan otomatis kami. Cukup klik tombol di bawah untuk memilih jenis kendaraan dan bagian yang rusak tanpa perlu mengetik panjang lebar. Draf pesan otomatis siap dikirim langsung ke WhatsApp Pak Wahyu.
+        </p>
+
+        <div class="consultation-actions">
+          <button type="button" class="btn btn-primary-wa" onclick="openChatTemplateModal()">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            <span>Rangkai Pesan WhatsApp</span>
+          </button>
+          <a href="https://wa.me/6289531168549?text=Halo%20Pak%20Wahyu%20(Angga%20Las)%2C%20saya%20mau%20konsultasi%20body%20repair%20mobil." target="_blank" rel="noopener" class="btn btn-secondary-outline">
+            <span>Langsung Chat WA Bebas</span>
+            <span class="btn-arrow">→</span>
+          </a>
+        </div>
+
+        <div class="consultation-perks-row">
+          <div class="c-perk-item">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>100% Gratis Konsultasi</span>
+          </div>
+          <div class="c-perk-item">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>Bisa Kirim Foto & Video Kerusakan</span>
+          </div>
+          <div class="c-perk-item">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>Ditangani Langsung Pak Wahyu</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       6. ALASAN MEMILIH ANGGA LAS (CLEAN SVG ICONS)
+       ============================================================ -->
+  <section class="why-section">
+    <div class="container">
+      
+      <div class="section-header reveal-on-scroll">
+        <span class="section-kicker">Keunggulan Kami</span>
+        <h2 class="section-title">Mengapa Memilih Angga Las?</h2>
+        <p class="section-subtitle">
+          Alasan para pemilik mobil dan pengusaha angkutan di Bekasi setia mempercayakan armadanya kepada kami.
+        </p>
+      </div>
+
+      <div class="why-grid">
+
+        <div class="why-card reveal-on-scroll">
+          <div class="why-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+          </div>
+          <h4>100% Tangan Pertama</h4>
+          <p>
+            Tidak dilempar ke pihak ketiga atau calo bengkel. Anda berkomunikasi dan bertransaksi langsung dengan Pak Wahyu, montir senior yang memegang alat las dan cat.
+          </p>
+        </div>
+
+        <div class="why-card reveal-on-scroll">
+          <div class="why-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+          </div>
+          <h4>Pengalaman Sejak Tahun 2000</h4>
+          <p>
+            25+ tahun menangani ribuan jenis mobil dari era jadul sampai modern. Paham betul titik rawan pelat, lekukan bodi pabrikan, dan ketebalan material.
+          </p>
+        </div>
+
+        <div class="why-card reveal-on-scroll">
+          <div class="why-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M16 8l-4 4-2-2"></path></svg>
+          </div>
+          <h4>Harga Jujur Sesuai Kondisi</h4>
+          <p>
+            Biaya disesuaikan secara transparan dengan tingkat kerusakan riil dan opsi bahan cat pilihan Anda. Tanpa biaya siluman di tengah jalan.
+          </p>
+        </div>
+
+        <div class="why-card reveal-on-scroll">
+          <div class="why-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+          </div>
+          <h4>Garansi Kerapian Pengerjaan</h4>
+          <p>
+            Kami memastikan hasil akhir memuaskan: cat menyatu rapi, celah antar panel bodi lurus simetris, dan sambungan las kuat tahan goncangan jalan.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       7. ALUR MUDAH 4 LANGKAH
+       ============================================================ -->
+  <section class="steps-section">
+    <div class="container">
+
+      <div class="section-header reveal-on-scroll">
+        <span class="section-kicker">Proses Mudah</span>
+        <h2 class="section-title">4 Langkah Memperbaiki Mobil di Angga Las</h2>
+        <p class="section-subtitle">
+          Proses cepat tanpa ribet, dari estimasi awal hingga unit selesai dikerjakan dengan rapi.
+        </p>
+      </div>
+
+      <div class="steps-grid">
+        
+        <div class="step-card reveal-on-scroll">
+          <div class="step-num">1</div>
+          <h4>Kirim Foto via WhatsApp</h4>
+          <p>Foto bagian bodi yang lecet, penyok, atau keropos dari beberapa sisi lalu kirimkan ke nomor WA Pak Wahyu.</p>
+        </div>
+
+        <div class="step-card reveal-on-scroll">
+          <div class="step-num">2</div>
+          <h4>Diskusi & Estimasi Biaya</h4>
+          <p>Pak Wahyu akan memberikan penjelasan pengerjaan, opsi bahan cat yang cocok, dan perkiraan biaya yang transparan.</p>
+        </div>
+
+        <div class="step-card reveal-on-scroll">
+          <div class="step-num">3</div>
+          <h4>Bawa Unit ke Bengkel</h4>
+          <p>Bawa mobil ke alamat bengkel di Wanasari, Cibitung untuk dicek fisik langsung dan pengerjaan segera dimulai.</p>
+        </div>
+
+        <div class="step-card reveal-on-scroll">
+          <div class="step-num">4</div>
+          <h4>Pengecekan Bersama & Selesai!</h4>
+          <p>Setelah pengerjaan rampung, unit dicek bersama hingga Anda puas dengan hasilnya sebelum serah terima.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       8. FAQ
+       ============================================================ -->
+  <section class="faq-section">
+    <div class="container">
+      
+      <div class="section-header reveal-on-scroll">
+        <span class="section-kicker">Tanya Jawab</span>
+        <h2 class="section-title">Pertanyaan yang Sering Diajukan</h2>
+        <p class="section-subtitle">
+          Hal umum yang sering ditanyakan pelanggan sebelum membawa mobil ke bengkel.
+        </p>
+      </div>
+
+      <div class="faq-container reveal-on-scroll">
+
+        <div class="faq-item">
+          <button type="button" class="faq-question" onclick="toggleFaq(this)">
+            <span>Berapa kisaran biaya perbaikan bodi mobil di Angga Las?</span>
+            <span class="faq-arrow">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </span>
+          </button>
+          <div class="faq-answer">
+            Biaya perbaikan sangat bergantung pada kondisi keparahan kerusakan, luas panel bodi, dan kualitas bahan cat yang Anda inginkan. Anda bisa mengirimkan foto bagian yang rusak via WhatsApp ke Pak Wahyu agar diberikan estimasi biaya yang transparan sebelum datang.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button type="button" class="faq-question" onclick="toggleFaq(this)">
+            <span>Bagaimana cara menentukan jenis cat yang dipakai?</span>
+            <span class="faq-arrow">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </span>
+          </button>
+          <div class="faq-answer">
+            Di Angga Las, Anda bisa memilih cat standar ekonomis untuk mobil niaga/harian atau cat duco berkualitas tinggi dengan clear coat glossy tahan cuaca untuk mobil pribadi. Pak Wahyu akan memberikan saran terbaik sesuai anggaran Anda.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button type="button" class="faq-question" onclick="toggleFaq(this)">
+            <span>Apakah melayani perbaikan kendaraan niaga seperti pick-up dan truk?</span>
+            <span class="faq-arrow">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </span>
+          </button>
+          <div class="faq-answer">
+            Ya, sangat sering! Angga Las berpengalaman menangani perbaikan kabin truk (Colt Diesel, Canter, Hino, Elf), pengelasan sasis truk/pick-up retak, restorasi bak pick-up keropos, hingga perbaikan tangki solar.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button type="button" class="faq-question" onclick="toggleFaq(this)">
+            <span>Apakah harus buat janji terlebih dahulu sebelum datang?</span>
+            <span class="faq-arrow">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </span>
+          </button>
+          <div class="faq-answer">
+            Anda bisa langsung datang kapan saja di jam operasional (Buka Setiap Hari, 08.00 - 17.00 WIB). Namun kami sarankan konfirmasi via WhatsApp terlebih dahulu agar Pak Wahyu bisa langsung menyambut tanpa antre.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button type="button" class="faq-question" onclick="toggleFaq(this)">
+            <span>Metode pembayaran apa saja yang diterima?</span>
+            <span class="faq-arrow">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </span>
+          </button>
+          <div class="faq-answer">
+            Kami menerima pembayaran tunai (cash) langsung di bengkel maupun pembayaran non-tunai melalui Transfer Bank (BCA / Mandiri / BRI) setelah pengerjaan selesai dicek bersama.
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       9. LOKASI, PETA & KONTAK (CLEAN SVG ICONS)
+       ============================================================ -->
+  <section class="location-section" id="lokasi">
+    <div class="container">
+
+      <div class="section-header reveal-on-scroll">
+        <span class="section-kicker">Alamat & Rute</span>
+        <h2 class="section-title">Kunjungi Bengkel Angga Las Langsung</h2>
+        <p class="section-subtitle">
+          Lokasi strategis dan mudah diakses di kawasan Wanasari, Kecamatan Cibitung, Kabupaten Bekasi.
+        </p>
+      </div>
+
+      <div class="location-box-card reveal-on-scroll">
+        <div class="location-grid">
+          
+          <!-- Detail Information -->
+          <div class="location-details">
+            <div class="loc-head-tag">ALAMAT LENGKAP BENGKEL</div>
+            <h3>Angga Las - Body Repair</h3>
+            <p class="address-text" id="addressText">
+              Wanasari, Kec. Cibitung, Kabupaten Bekasi, Jawa Barat
+            </p>
+
+            <div class="loc-meta-list">
+              <div class="loc-meta-item">
+                <span class="loc-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                </span>
+                <div>
+                  <strong>Pemilik / Montir Utama:</strong>
+                  <span>Pak Wahyu Permana</span>
+                </div>
+              </div>
+
+              <div class="loc-meta-item">
+                <span class="loc-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                </span>
+                <div>
+                  <strong>WhatsApp & Telepon:</strong>
+                  <a href="https://wa.me/6289531168549" target="_blank" rel="noopener" class="loc-phone-link">0895-3116-8549</a>
+                </div>
+              </div>
+
+              <div class="loc-meta-item">
+                <span class="loc-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                </span>
+                <div>
+                  <strong>Jam Buka:</strong>
+                  <span>Buka Setiap Hari | 08.00 - 17.00 WIB</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="location-btns">
+              <a href="https://maps.app.goo.gl/X3m3Tn4HvjNFnmnQA" target="_blank" rel="noopener" class="btn btn-maps-primary">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span>Petunjuk Rute Google Maps</span>
+              </a>
+
+              <button type="button" class="btn btn-copy-address" onclick="copyAddress()">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                <span id="copyBtnText">Salin Alamat</span>
+              </button>
+            </div>
+
+          </div>
+
+          <!-- Maps Embed -->
+          <div class="location-visual-col">
+            <div class="map-card-container">
+              <div class="map-top-bar">
+                <div class="map-dots">
+                  <span></span><span></span><span></span>
+                </div>
+                <div class="map-title-bar">Google Maps: Bengkel Lass Karbit Angga Lass</div>
+              </div>
+              
+              <iframe 
+                title="Peta Lokasi Angga Las Body Repair Wanasari Cibitung"
+                src="https://maps.google.com/maps?q=-6.2486739,107.0884027&hl=id&z=15&output=embed"
+                width="100%" 
+                height="320" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+
+              <div class="map-card-footer">
+                <span>Titik Presisi: Wanasari, Cibitung</span>
+                <a href="https://maps.app.goo.gl/X3m3Tn4HvjNFnmnQA" target="_blank" rel="noopener">Buka Full Screen ↗</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       10. FOOTER
+       ============================================================ -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      
+      <!-- Brand & Story -->
+      <div class="footer-brand-col">
+        <div class="footer-brand-title">
+          <div class="footer-logo-box">AL</div>
+          <div>
+            <h4>ANGGA LAS</h4>
+            <small>BODY REPAIR & CAT DUCO</small>
+          </div>
+        </div>
+        <p class="footer-desc">
+          Bengkel spesialis las ketok, body repair, cat duco, poles bodi, las sasis, dan las tangki di Wanasari, Cibitung, Kabupaten Bekasi. Melayani kendaraan pribadi hingga niaga sejak tahun 2000.
+        </p>
+        <div class="footer-quote">
+          "Pengerjaan langsung tangan pertama oleh Pak Wahyu Permana. Presisi, rapi, dan bergaransi."
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-links-col">
+        <h5>Navigasi Bengkel</h5>
+        <ul class="footer-nav">
+          <li><a href="#beranda">Beranda</a></li>
+          <li><a href="#tentang">Tentang Pak Wahyu</a></li>
+          <li><a href="#layanan">Daftar Layanan</a></li>
+          <li><a href="#komparasi">Before vs Sesudah</a></li>
+          <li><a href="#galeri">Foto Bukti Pengerjaan</a></li>
+          <li><a href="#form-wa">Tanya via WhatsApp</a></li>
+          <li><a href="#lokasi">Lokasi & Rute Maps</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="footer-contact-col">
+        <h5>Kontak & Layanan</h5>
+        <ul class="footer-contact-list">
+          <li>
+            <strong>Montir Kepala:</strong>
+            <span>Pak Wahyu Permana (25+ Th Pengalaman)</span>
+          </li>
+          <li>
+            <strong>WhatsApp / Telepon:</strong>
+            <a href="https://wa.me/6289531168549" target="_blank" rel="noopener">0895-3116-8549</a>
+          </li>
+          <li>
+            <strong>Alamat:</strong>
+            <span>Wanasari, Kec. Cibitung, Kab. Bekasi, Jawa Barat</span>
+          </li>
+          <li>
+            <strong>Jam Operasional:</strong>
+            <span class="footer-badge-open">Buka Setiap Hari (08.00 - 17.00 WIB)</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Bottom Copyright Bar -->
+    <div class="container footer-bottom">
+      <div class="footer-bottom-flex">
+        <p>&copy; 2026 Angga Las - Body Repair. Hak Cipta Dilindungi.</p>
+        <p class="footer-sub-credit">Bengkel Bapak Wahyu Permana di Cibitung, Bekasi.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       POPUP MODAL: RANGKAI FORMAT PERTANYAAN WHATSAPP
+       ============================================================ -->
+  <div class="chat-modal-backdrop" id="chatTemplateModal" onclick="closeChatModalOnBackdrop(event)">
+    <div class="chat-modal-container" role="dialog" aria-modal="true" aria-labelledby="chatModalTitle" onclick="event.stopPropagation()">
+      
+      <!-- Modal Header -->
+      <div class="chat-modal-header">
+        <div>
+          <span class="section-kicker">Format WhatsApp Cepat</span>
+          <h3 id="chatModalTitle" class="chat-modal-title">Rangkai Pertanyaan ke Pak Wahyu</h3>
+          <p class="chat-modal-subtitle">Pilih kondisi kendaraan Anda untuk membuat draf pesan otomatis.</p>
+        </div>
+        <button type="button" class="chat-modal-close" onclick="closeChatTemplateModal()" aria-label="Tutup popup">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+
+      <!-- Modal Body (Scrollable) -->
+      <div class="chat-modal-body">
+        
+        <!-- Step 1: Vehicle Selector -->
+        <div class="wizard-step">
+          <label class="wizard-label">1. Pilih Jenis Kendaraan:</label>
+          <div class="chip-selector-grid" id="vehicleChips">
+            <button type="button" class="select-chip active" data-type="vehicle" data-value="Mobil Keluarga (Avanza / Innova / MPV / SUV)" onclick="selectChip(this, 'vehicle')">
+              <span class="chip-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 13l2-5a2 2 0 0 1 1.8-1.2h10.4A2 2 0 0 1 19 8l2 5v4a1 1 0 0 1-1 1h-1a2 2 0 0 1-4 0H9a2 2 0 0 1-4 0H4a1 1 0 0 1-1-1v-4z"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></svg>
+              </span>
+              <span class="chip-text">Mobil Keluarga (MPV / SUV)</span>
+            </button>
+            <button type="button" class="select-chip" data-type="vehicle" data-value="Mobil Sedan / City Car" onclick="selectChip(this, 'vehicle')">
+              <span class="chip-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/></svg>
+              </span>
+              <span class="chip-text">Sedan / City Car</span>
+            </button>
+            <button type="button" class="select-chip" data-type="vehicle" data-value="Mobil Pick-Up Niaga (Carry/GranMax/L300)" onclick="selectChip(this, 'vehicle')">
+              <span class="chip-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 17H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h9l4 4v6a2 2 0 0 1-2 2h-2"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></svg>
+              </span>
+              <span class="chip-text">Mobil Pick-Up</span>
+            </button>
+            <button type="button" class="select-chip" data-type="vehicle" data-value="Truk Niaga (Canter/Dutro/Elf)" onclick="selectChip(this, 'vehicle')">
+              <span class="chip-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+              </span>
+              <span class="chip-text">Truk Niaga / Engkel</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Step 2: Service Selector -->
+        <div class="wizard-step">
+          <label class="wizard-label">2. Pilih Kondisi / Bagian yang Rusak:</label>
+          <div class="chip-selector-grid" id="serviceChips">
+            <button type="button" class="select-chip active" data-type="service" data-value="Bodi Penyok / Bumper Robek / Ringsek Bekas Tabrakan" onclick="selectChip(this, 'service')">
+              <span class="chip-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+              </span>
+              <span class="chip-text">Bodi Penyok / Bekas Tabrakan</span>
+            </button>
+            <button type="button" class="select-chip" data-type="service" data-value="Cat Duco Per Panel (Spet Baret / Lecet Pintu / Fender)" onclick="selectChip(this, 'service')">
+              <span class="chip-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"/><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"/><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"/><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.9 0 1.7-.8 1.7-1.8 0-.5-.2-.9-.5-1.3-.3-.4-.5-.8-.5-1.3 0-1 .8-1.8 1.8-1.8H16c3.3 0 6-2.7 6-6 0-5.5-4.5-9.8-10-9.8z"/></svg>
+              </span>
+              <span class="chip-text">Cat Duco Per Panel (Spet Baret)</span>
+            </button>
+            <button type="button" class="select-chip" data-type="service" data-value="Cat Siram Full Body (Repaint Luar / Seluruh Bodi)" onclick="selectChip(this, 'service')">
+              <span class="chip-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/></svg>
+              </span>
+              <span class="chip-text">Cat Siram Full Body</span>
+            </button>
+            <button type="button" class="select-chip" data-type="service" data-value="Potong & Las Bodi Keropos Karat Parah" onclick="selectChip(this, 'service')">
+              <span class="chip-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+              </span>
+              <span class="chip-text">Las Bodi Keropos Karat</span>
+            </button>
+            <button type="button" class="select-chip" data-type="service" data-value="Poles Bodi Wet-Look (Hilang Baret Halus & Jamur)" onclick="selectChip(this, 'service')">
+              <span class="chip-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.4 7.2L22 12l-7.6 2.8L12 22l-2.4-7.2L2 12l7.6-2.8L12 2z"/></svg>
+              </span>
+              <span class="chip-text">Poles Bodi Wet-Look</span>
+            </button>
+            <button type="button" class="select-chip" data-type="service" data-value="Las Rangka Casis (Patah / Retak / Bengkok)" onclick="selectChip(this, 'service')">
+              <span class="chip-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+              </span>
+              <span class="chip-text">Las Sasis / Rangka</span>
+            </button>
+            <button type="button" class="select-chip" data-type="service" data-value="Las Tangki BBM Bocor / Rembes" onclick="selectChip(this, 'service')">
+              <span class="chip-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 22V4a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v18M17 10h2a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2h-2"/><rect x="6" y="6" width="8" height="6" rx="1"/></svg>
+              </span>
+              <span class="chip-text">Las Tangki BBM Bocor</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Step 3: Material Preference -->
+        <div class="wizard-step">
+          <label class="wizard-label">3. Rencana Bahan & Anggaran:</label>
+          <div class="chip-selector-grid compact" id="qualityChips">
+            <button type="button" class="select-chip active" data-type="quality" data-value="Bahan Bagus Berkualitas & Tahan Lama (Rekomendasi)" onclick="selectChip(this, 'quality')">
+              <span class="chip-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              </span>
+              <span class="chip-text">Bahan Bagus (Rekomendasi)</span>
+            </button>
+            <button type="button" class="select-chip" data-type="quality" data-value="Paket Hemat Standar Ekonomis" onclick="selectChip(this, 'quality')">
+              <span class="chip-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+              </span>
+              <span class="chip-text">Paket Hemat Ekonomis</span>
+            </button>
+            <button type="button" class="select-chip" data-type="quality" data-value="Minta Saran Terbaik dari Pak Wahyu" onclick="selectChip(this, 'quality')">
+              <span class="chip-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              </span>
+              <span class="chip-text">Minta Saran Pak Wahyu</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Step 4: Name & Notes -->
+        <div class="calc-inputs-row">
+          <div class="form-field">
+            <label class="field-label" for="clientName">Nama Anda:</label>
+            <input type="text" id="clientName" class="field-input" placeholder="Contoh: Mas Budi / Pak Hendra" oninput="updateLivePreview()">
+          </div>
+          <div class="form-field">
+            <label class="field-label" for="damageNote">Catatan Titik Kerusakan (Opsional):</label>
+            <input type="text" id="damageNote" class="field-input" placeholder="Contoh: Bumper depan kiri baret & pintu penyok" oninput="updateLivePreview()">
+          </div>
+        </div>
+
+        <!-- Message Preview Box -->
+        <div class="calc-preview-card">
+          <div class="preview-badge-row">
+            <span class="preview-badge">Draf Pesan WhatsApp yang Terangkai:</span>
+            <small class="preview-sub">Pesan otomatis terisi di WhatsApp Anda</small>
+          </div>
+          <div class="preview-text-box" id="waMessagePreview">
+            <!-- Dynamically populated by JS -->
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="chat-modal-footer">
+        <button type="button" class="btn btn-whatsapp-large" onclick="sendCustomWhatsApp()">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.149.929 3.178 0 5.767-2.587 5.768-5.766 0-3.18-2.588-5.771-5.768-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.062-2.18-.553-1.898-.785-3.119-2.73-3.214-2.856-.095-.127-.775-1.031-.775-1.967 0-.936.491-1.396.666-1.587.175-.191.381-.239.508-.239.127 0 .254.002.365.008.117.006.273-.045.426.323.16.383.542 1.323.589 1.419.048.096.079.208.016.335-.064.127-.096.207-.191.319-.096.111-.2.247-.286.333-.095.095-.194.198-.083.389.111.191.493.813 1.056 1.314.726.645 1.338.845 1.529.94.19.095.301.079.412-.048.111-.127.476-.556.603-.746.127-.19.254-.159.428-.095.175.063 1.11.523 1.301.619.191.095.318.143.365.222.048.079.048.46-.096.865z"/>
+            <path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2.05 22l4.985-1.307C8.482 21.554 10.187 22 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18c-1.63 0-3.14-.493-4.402-1.338l-.316-.21-2.96.776.79-2.885-.23-.332C3.993 14.73 3.5 13.415 3.5 12c0-4.687 3.813-8.5 8.5-8.5s8.5 3.813 8.5 8.5-3.813 8.5-8.5 8.5z"/>
+          </svg>
+          <span>Kirim Format Pertanyaan ke WhatsApp</span>
+        </button>
+        <small class="tip-subtext">Setelah WhatsApp terbuka, Anda bisa melampirkan foto/video kerusakan mobil.</small>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ============================================================
+       IMAGE LIGHTBOX MODAL
+       ============================================================ -->
+  <div class="lightbox-modal" id="lightboxModal" onclick="closeLightbox(event)">
+    <div class="lightbox-content" onclick="event.stopPropagation()">
+      <button type="button" class="lightbox-close" onclick="closeLightbox()" aria-label="Tutup preview">✕</button>
+      <img src="" alt="Preview Gambar Pengerjaan Angga Las" class="lightbox-img" id="lightboxImg">
+      <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+  </div>
+
+  <!-- Script JS -->
+  <script src="script.js"></script>
+</body>
+</html>
